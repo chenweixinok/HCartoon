@@ -47,7 +47,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_toRightOf="@+id/detail_logo_iv"
-            android:textColor="#48b775"
             android:textSize="20sp" />
 
         <TextView
@@ -56,8 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/detail_name_tv"
             android:layout_below="@+id/detail_name_tv"
-            android:layout_marginTop="10dp"
-            android:textColor="#48b775" />
+            android:layout_marginTop="10dp" />
 
         <TextView
             android:id="@+id/detail_pop_tv"
@@ -65,8 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/detail_author_tv"
             android:layout_below="@+id/detail_author_tv"
-            android:layout_marginTop="10dp"
-            android:textColor="#48b775" />
+            android:layout_marginTop="10dp" />
         
         <Button
             android:id="@+id/detail_start_bt"

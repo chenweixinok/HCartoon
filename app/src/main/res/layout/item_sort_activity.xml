@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/sort_img_activity"
+        android:layout_width="100dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/sort_title_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sort_img_activity"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/sort_author_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sort_title_activity"
+        android:layout_toRightOf="@+id/sort_img_activity"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/sort_introd_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sort_author_activity"
+        android:layout_toRightOf="@+id/sort_img_activity"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

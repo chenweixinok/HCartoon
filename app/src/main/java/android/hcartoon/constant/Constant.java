@@ -33,4 +33,14 @@ public class Constant {
      * 用户名
      */
     public static final String USERNAME="&u_id=&user_name=mstars1438764774284694";
+    /**
+     * 分类列表
+     */
+    public static final String SORT_LIST = "http://www.mstars.cn/api/mstars_api/cartoon_theme.php?type=theme";
+
+    /**
+     * 分类列表项
+     */
+    public static final String SORT_LIST_ITEMS = "http://www.mstars.cn/api/mstars_api/cartoon_list.php?type=theme&"
+            + DEVICE_MODEL + "&t_id=";
 }

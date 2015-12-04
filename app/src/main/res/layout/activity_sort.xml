@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/sort_ac_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_recorder_normal"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="#48b775"
+            android:textSize="22sp"/>
+        
+        <ImageView
+            android:id="@+id/sort_back"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_recorder_normal"
+            android:src="@drawable/back_jiantou_btn"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/sort_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    </ListView>
+
+</LinearLayout>

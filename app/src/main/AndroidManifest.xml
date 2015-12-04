@@ -44,6 +44,8 @@
 
         <activity
             android:name="android.hcartoon.activity.ChapterActivity"></activity>
+
+        <activity android:name=".SortActivity"></activity>
     </application>
 
 </manifest>
