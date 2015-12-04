@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lib-volly">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/lib-volly.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

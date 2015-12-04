@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="auto_scroll_pager">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/auto_scroll_pager.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

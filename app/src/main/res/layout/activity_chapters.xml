@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#48b775"
+            android:text="章节列表"
+            android:textSize="25sp"
+            android:background="@drawable/btn_recorder_normal"/>
+        
+        <ImageButton
+            android:id="@+id/chapter_back_bt"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_recorder_normal"
+            android:src="@drawable/back_jiantou_btn"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/chapter_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_recorder_normal"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/chapter_index_read"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/rank_check"
+            android:button="@null"
+            android:checked="true"
+            android:drawableLeft="@drawable/author_collect"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="阅 读"
+            android:textColor="#48b775" />
+
+        <RadioButton
+            android:id="@+id/chapter_index_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/rank_check"
+            android:button="@null"
+            android:drawableLeft="@drawable/download_ico"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="下 载"
+            android:textColor="#48b775" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/chapter_cname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作品名字" />
+
+        <TextView
+            android:id="@+id/chapter_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="连载中" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/chapter_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

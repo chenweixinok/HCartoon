@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.yfbx.autoscrollpager.AutoScrollViewPager
+            android:id="@+id/ad_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/recom_tab"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/hot"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/FragRecommend"
+                android:checked="true"
+                android:drawableBottom="@drawable/recom_tab"
+                android:text="热门推荐"/>
+
+            <RadioButton
+                android:id="@+id/original"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/FragRecommend"
+                android:drawableBottom="@drawable/recom_tab"
+                android:text="原创漫画"/>
+
+            <RadioButton
+                android:id="@+id/oversea"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/FragRecommend"
+                android:drawableBottom="@drawable/recom_tab"
+                android:text="海外精彩"/>
+
+            <RadioButton
+                android:id="@+id/latest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/FragRecommend"
+                android:drawableBottom="@drawable/recom_tab"
+                android:text="最新快看"/>
+
+        </RadioGroup>
+
+        <android.hcartoon.view.RecomGridView
+            android:id="@+id/reco_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2" />
+    </LinearLayout>
+
+</ScrollView>

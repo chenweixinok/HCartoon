@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="RadioButtonStyle" parent="android:Widget.Holo.Light.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@drawable/bg_text_color</item>
+        <item name="android:padding">1dp</item>
+    </style>
+
+    <style name="RecomTabStyle">
+        <item name="android:button">@null</item>
+        <item name="android:drawableBottom">@drawable/recom_tab</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="FragRecommend">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#48b775</item>
+        <item name="android:background">@drawable/recommend_tab1</item>
+
+    </style>
+
+
+</resources>

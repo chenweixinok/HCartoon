@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_recorder_normal">
+        
+        <TextView
+            android:id="@+id/topicitem_top_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="书籍详情"
+            android:textColor="#48b775"
+            android:textSize="25sp"/>
+
+        <ImageButton
+            android:id="@+id/detail_top_ib"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_jiantou_btn"
+            android:background="@drawable/btn_recorder_normal"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/detail_logo_iv"
+            android:layout_width="100dp"
+            android:layout_height="129dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/special_definite_book"/>
+
+        <TextView
+            android:id="@+id/detail_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/detail_logo_iv"
+            android:textColor="#48b775"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/detail_author_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/detail_name_tv"
+            android:layout_below="@+id/detail_name_tv"
+            android:layout_marginTop="10dp"
+            android:textColor="#48b775" />
+
+        <TextView
+            android:id="@+id/detail_pop_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/detail_author_tv"
+            android:layout_below="@+id/detail_author_tv"
+            android:layout_marginTop="10dp"
+            android:textColor="#48b775" />
+        
+        <Button
+            android:id="@+id/detail_start_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/detail_pop_tv"
+            android:layout_below="@+id/detail_pop_tv"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/new_bookdetails_read"
+            android:text="开始阅读"/>
+
+        <TextView
+            android:id="@+id/detail_lianzai_tv"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/detail_logo_iv"
+            android:layout_alignLeft="@+id/detail_logo_iv"
+            android:background="#550000ff"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:text="内容简介"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/details_neirong_tv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="正在加载内容..." />
+
+    <LinearLayout
+        android:id="@+id/details_collect_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/bt_tucao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_recorder_normal"
+            android:drawableLeft="@drawable/bookdetaisl_comment_icon"
+            android:text="吐 槽"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#48b775" />
+
+
+        <RadioButton
+            android:id="@+id/rb_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_recorder_normal"
+            android:button="@drawable/check_collect"
+            android:gravity="center"
+            android:text="收 藏"
+            android:textColor="#48b775" />
+
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_recorder_normal"
+            android:drawableLeft="@drawable/bookdetaisl_share_icon"
+            android:gravity="center"
+            android:text="分 享"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#48b775" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HCartoon</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_text">copyright©2015 Android.HCartoon.All</string>
+</resources>
