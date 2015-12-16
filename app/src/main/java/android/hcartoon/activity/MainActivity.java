@@ -5,12 +5,14 @@ package android.hcartoon.activity;
 import android.animation.ObjectAnimator;
 import android.app.ActionBar;
 import android.hcartoon.adapter.MainPageAdapter;
+import android.hcartoon.adapter.SortActAdapter;
 import android.hcartoon.fragment.NavigationFragment;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -20,6 +22,8 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.nineoldandroids.view.ViewHelper;
 
 
 public class MainActivity extends FragmentActivity implements OnCheckedChangeListener,
@@ -42,6 +46,8 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 
         initNavigation();
 
+        initEvents();
+
         anim = ObjectAnimator.ofFloat(title, "alpha", 0.25f, 1f);
         anim.setDuration(5000);
         //anim.setRepeatCount(5);
@@ -50,8 +56,59 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 
     }
 
+    private void initEvents() {
+
+        drawerLayout.setDrawerListener(new DrawerLayout.DrawerListener() {
+            @Override
+            public void onDrawerSlide(View drawerView, float slideOffset) {
+
+                View mContent = drawerLayout.getChildAt(0);
+                View mMenu = drawerView;
+                float scale = 1 - slideOffset;
+                float rightScale = 0.8f + scale * 0.2f;
+
+                if (drawerView.getTag().equals("NAVIGATION")){
+                    float leftScale = 1 - 0.3f * scale;
+                    ViewHelper.setScaleX(mMenu, leftScale);
+                    ViewHelper.setScaleY(mMenu, leftScale);
+                    ViewHelper.setAlpha(mMenu, 0.6f + 0.4f * (1 - scale));
+                    ViewHelper.setTranslationX(mContent,
+                            mMenu.getMeasuredWidth() * (1 - scale));
+                    ViewHelper.setPivotX(mContent, 0);
+                    ViewHelper.setPivotY(mContent,
+                            mContent.getMeasuredHeight() / 2);
+                    mContent.invalidate();
+                    ViewHelper.setScaleX(mContent, rightScale);
+                    ViewHelper.setScaleY(mContent, rightScale);
+                }
+
+            }
+
+            @Override
+            public void onDrawerOpened(View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerClosed(View drawerView) {
+
+            }
+
+            @Override
+            public void onDrawerStateChanged(int newState) {
+
+            }
+        });
+
+
+    }
+
     private void initNavigation() {
+
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED, Gravity.RIGHT);
+        drawerLayout.setScrimColor(0x00000000);
+        
         navigation = (LinearLayout) findViewById(R.id.navigation);
         getSupportFragmentManager().beginTransaction()
                .add(R.id.navigation, new NavigationFragment()).commit();

@@ -20,7 +20,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * ÕÂ½ÚÁĞ±íactivity
+ * ç« èŠ‚åˆ—è¡¨activity
  * Created by Lenovo on 2015/11/24.
  */
 public class ChapterActivity extends FragmentActivity implements View.OnClickListener {
@@ -78,7 +78,7 @@ public class ChapterActivity extends FragmentActivity implements View.OnClickLis
     }
 
     /**
-     * ³õÊ¼»¯¿Ø¼ş
+     * åˆå§‹åŒ–æ§ä»¶
      */
     private void initView() {
 

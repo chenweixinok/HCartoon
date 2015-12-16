@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:horizontalSpacing="15dp"
         android:numColumns="4"
-        android:verticalSpacing="20dp"></GridView>
+        android:verticalSpacing="20dp"
+        android:scrollbars="none"></GridView>
 
 </LinearLayout>

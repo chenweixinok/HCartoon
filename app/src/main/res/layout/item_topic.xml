@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/special_bg" >
+
+    <ImageView
+        android:id="@+id/topic_item_logo_iv"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/topic_item_theme_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/topic_item_logo_iv"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/special_id_bg_blue"
+        android:gravity="center"
+        android:text="专题"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic_item_name_tv"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/special_definite_ban_se" />
+
+    <TextView
+        android:id="@+id/topic_item_hits_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/topic_item_name_tv"
+        android:layout_toLeftOf="@+id/topic_item_aixin"
+        android:gravity="center"
+        android:text="hits"
+        android:textColor="#318be3"
+        />
+
+    <ImageView
+        android:id="@+id/topic_item_aixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/topic_item_logo_iv"
+        android:layout_alignTop="@+id/topic_item_hits_tv"
+        android:scaleType="fitXY"
+        android:src="@drawable/special_aixin" />
+
+    <TextView
+        android:id="@+id/topic_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/topic_item_logo_iv"
+        android:layout_below="@+id/topic_item_logo_iv"
+        android:gravity="center"
+        android:text="name"
+        android:textColor="#318be3"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/topic_item_top_name_1111"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#48b775"
+            android:textSize="25dp"
+            android:background="@drawable/btn_recorder_normal"/>
+
+        <ImageView
+            android:id="@+id/topic_item_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_recorder_normal"
+            android:src="@drawable/back_jiantou_btn"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/topic_item_lv"
+        android:divider="#C0C0C0"
+        android:dividerHeight="1px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/topicitem_logo_iv"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/topicitem_popularity_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/topicitem_logo_iv"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginRight="5dp"
+        android:text="popularity" />
+
+    <TextView
+        android:id="@+id/topicitem_author_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/topicitem_popularity_tv"
+        android:layout_alignBottom="@+id/topicitem_popularity_tv"
+        android:layout_toRightOf="@+id/topicitem_logo_iv"
+        android:layout_marginLeft="5dp"
+        android:text="author" />
+
+    <TextView
+        android:id="@+id/topicitem_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/topicitem_name_tv"
+        android:layout_alignBottom="@+id/topicitem_name_tv"
+        android:layout_alignLeft="@+id/topicitem_popularity_tv"
+        android:gravity="right"
+        android:text="status" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/topicitem_logo_iv"
+        android:layout_alignRight="@+id/topicitem_status_tv"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/special_aixin" />
+
+    <TextView
+        android:id="@+id/topicitem_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/topicitem_logo_iv"
+        android:layout_toRightOf="@+id/topicitem_logo_iv"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:text="name" />
+
+    <TextView
+        android:id="@+id/topicitem_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/topicitem_logo_iv"
+        android:layout_alignBottom="@+id/topicitem_logo_iv"
+        android:text="type asdasd"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignTop="@+id/imageView2" />
+
+</RelativeLayout>

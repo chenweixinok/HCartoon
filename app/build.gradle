@@ -25,4 +25,5 @@ dependencies {
     compile files('libs/auto_scroll_pager.jar')
     compile files('libs/lib-xutils.jar')
     compile files('libs/lib-volly.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
 }
