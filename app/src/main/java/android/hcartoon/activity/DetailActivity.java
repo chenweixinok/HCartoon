@@ -185,12 +185,19 @@ public class DetailActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.detail_start_bt:
-               // MyApplication myapplication = (MyApplication) getApplication();
-                //Details details2 = mdata.get(0);
-                //myapplication.addReading(details2);
+                MyApplication myapplication = (MyApplication) getApplication();
+                Details details2 = mdata.get(0);
+                myapplication.addReading(details2);
                 Intent intent = new Intent(this,ChapterActivity.class);
                 intent.putExtra("cid",id);
                 startActivity(intent);
+                break;
+
+            case R.id.rb_collect:// 收藏
+                // Toast.makeText(this, "收藏", 1).show();
+                MyApplication myapplication1 = (MyApplication) getApplication();
+                Details details3 = mdata.get(0);
+                myapplication1.addCollection(details3);
                 break;
         }
 

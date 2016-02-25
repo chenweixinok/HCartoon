@@ -18,7 +18,7 @@ public class RecentBean {
     @Column(column = "author")
     String author;
     @Column(column = "pop")
-    String pop;
+    String popularity;
     @Column(column = "img")
     String img;
 
@@ -34,7 +34,7 @@ public class RecentBean {
         this.cid = cid;
         this.title = title;
         this.author = author;
-        this.pop = pop;
+        this.popularity = pop;
         this.img = img;
     }
 
@@ -70,12 +70,12 @@ public class RecentBean {
         this.author = author;
     }
 
-    public String getPop() {
-        return pop;
+    public String getPopularity() {
+        return popularity;
     }
 
-    public void setPop(String pop) {
-        this.pop = pop;
+    public void setPopularity(String popularity) {
+        this.popularity = popularity;
     }
 
     public String getImg() {

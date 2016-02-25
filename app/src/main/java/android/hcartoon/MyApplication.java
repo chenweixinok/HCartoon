@@ -62,7 +62,7 @@ public class MyApplication extends Application{
         return collect;
     }
 
-    public DbUtils getdb(){
+    public DbUtils getDb(){
         return dbUtils;
     }
 

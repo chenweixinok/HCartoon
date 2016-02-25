@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/iv_ranking_pop_cover"
+        android:layout_width="100dp"
+        android:layout_height="133dp"
+        android:background="@drawable/recommend_image_load" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_toRightOf="@+id/iv_ranking_pop_cover"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tv_ranking_pop_cname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无数据" />
+
+        <TextView
+            android:id="@+id/tv_ranking_pop_statusname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_ranking_pop_cname"
+            android:paddingLeft="5dp"
+            android:text="连载"
+            android:textColor="#FF8C8C8C" />
+
+        <TextView
+            android:id="@+id/tv_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_ranking_pop_cname"
+            android:text="作者 :"
+            android:textColor="#FF8C8C8C"
+            android:paddingTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_ranking_pop_author_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ranking_pop_cname"
+            android:layout_toRightOf="@+id/tv_author_name"
+            android:paddingLeft="5dp"
+            android:text="暂无数据"
+            android:textColor="#FF8C8C8C"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/tv_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_ranking_pop_author_name"
+            android:text="题材 :"
+            android:textColor="#FF8C8C8C"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/tv_ranking_pop_tname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ranking_pop_author_name"
+            android:layout_toRightOf="@+id/tv_t"
+            android:paddingLeft="5dp"
+            android:text="暂无数据"
+            android:textColor="#FF8C8C8C"
+            android:paddingTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_t"
+            android:text="收藏 :"
+            android:textColor="#FFFF0000"
+            android:paddingTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_ranking_pop_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_t"
+            android:layout_toRightOf="@+id/tv_sc"
+            android:paddingLeft="5dp"
+            android:text="暂无数据"
+            android:textColor="#FF8C8C8C"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/tv_pop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_t"
+            android:layout_toRightOf="@+id/tv_ranking_pop_collection"
+            android:paddingLeft="5dp"
+            android:text="人气 :"
+            android:textColor="#FFFF0000"
+            android:paddingTop="12dp" />
+
+        <TextView
+            android:id="@+id/tv_ranking_pop_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_t"
+            android:layout_toRightOf="@+id/tv_pop"
+            android:paddingLeft="5dp"
+            android:text="0"
+            android:paddingTop="12dp"
+            android:textColor="#FF8C8C8C" />
+    </RelativeLayout>
+
+</RelativeLayout>

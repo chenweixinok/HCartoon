@@ -53,4 +53,12 @@ public class Constant {
      */
     public static final String TOPIC_LIST_ITEMS = "http://www.mstars.cn/api/mstars_api/specialtopic_info.php?phonemodel=vivoX710L&phonesystem=android4.4.2&phoneid=864855029870732&apptype=android&appname=mstars&appver=2.5.4&st_id=";
 
+    /**
+     * 人气排行
+     */
+    public static final String POPULARITY_RANK = "http://www.mstars.cn/api/mstars_api/cartoon_list.php?type=order";
+    /**
+     * 周排行
+     */
+    public static final String WEEK_RANK = "http://www.mstars.cn/api/mstars_api/cartoon_month_order.php?";
 }
