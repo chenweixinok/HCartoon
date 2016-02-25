@@ -3,8 +3,11 @@ package android.hcartoon.fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.hcartoon.activity.DownloadActivity;
+import android.hcartoon.activity.FeedbackActivity;
 import android.hcartoon.activity.LoginActivity;
 import android.hcartoon.activity.R;
+import android.hcartoon.activity.SettingActivity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -47,15 +50,15 @@ public class NavigationFragment extends Fragment implements View.OnClickListener
                 break;
 
             case R.id.menu_set:
-                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), SettingActivity.class);
                 break;
 
             case R.id.menu_download:
-                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), DownloadActivity.class);
                 break;
 
             case R.id.menu_feedback:
-                intent = new Intent(getActivity(), LoginActivity.class);
+                intent = new Intent(getActivity(), FeedbackActivity.class);
                 break;
         }
         getActivity().startActivity(intent);

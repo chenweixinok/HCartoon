@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="#48b775">
+
+        <TextView
+            android:id="@+id/topicitem_top_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="用户反馈"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/feedback_top_btn"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_jiantou_btn"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+        <TextView
+            android:id="@+id/feedback_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:maxEms="15"
+            android:background="@drawable/aio_friend_bg_nor_11"
+            android:text="你好，我是产品经理，欢迎您反馈使用产品的感受和意见" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/btn_recorder_normal">
+
+        <EditText
+            android:id="@+id/et_feetback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:hint="我想说:此功能开发_ing" />
+
+        <Button
+            android:id="@+id/feetback_send_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:text="发送"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

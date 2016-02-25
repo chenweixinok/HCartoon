@@ -36,6 +36,19 @@
 
         <activity
             android:name=".LoginActivity"></activity>
+        <activity android:name=".DownloadActivity"></activity>
+
+        <activity android:name=".FeedbackActivity"></activity>
+
+        <activity android:name=".SettingActivity"></activity>
+
+        <activity android:name=".SettingBindingActivity"></activity>
+
+        <activity android:name=".SetttingAboutActivity"></activity>
+
+        <activity android:name=".SettingNewuserActivity"></activity>
+
+        <activity android:name=".SettingCopyActivity"></activity>
 
         <activity
             android:name=".DetailActivity"></activity>

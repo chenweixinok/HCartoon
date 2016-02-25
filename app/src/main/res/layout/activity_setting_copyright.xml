@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeeeee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#48b775" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="版权投诉"
+            android:textColor="#FFFFFFFF"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/settingcopy_brank_btn"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_jiantou_btn" />
+
+        <Button
+            android:id="@+id/settingcopy_ok_btn"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_comment_right_nor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/shoujianren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收件人 :"
+            android:textColor="#FF777777" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/shoujianren"
+            android:text="mstarsapp@mstars.cn" />
+
+        <TextView
+            android:id="@+id/biaoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shoujianren"
+            android:layout_marginTop="20dp"
+            android:text="标   题  :"
+            android:textColor="#FF777777" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shoujianren"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/biaoti"
+            android:text="版权投诉" />
+
+        <TextView
+            android:id="@+id/neirong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/biaoti"
+            android:layout_marginTop="20dp"
+            android:text="内   容 :"
+            android:textColor="#FF777777" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/neirong"
+            android:layout_marginTop="20dp"
+            android:hint="请输入投诉内容" />
+    </RelativeLayout>
+
+</LinearLayout>

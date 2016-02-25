@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -198,6 +199,14 @@ public class DetailActivity extends Activity implements View.OnClickListener {
                 MyApplication myapplication1 = (MyApplication) getApplication();
                 Details details3 = mdata.get(0);
                 myapplication1.addCollection(details3);
+                break;
+
+            case R.id.bt_tucao:
+                Toast.makeText(this, "开发中...请耐心等候！", Toast.LENGTH_LONG).show();
+                break;
+
+            case R.id.bt_share:
+                Toast.makeText(this, "开发中...请耐心等候！", Toast.LENGTH_LONG).show();
                 break;
         }
 

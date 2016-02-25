@@ -1,5 +1,6 @@
 package android.hcartoon.activity;
 
+import android.hcartoon.fragment.ChapterDownloadFragment;
 import android.hcartoon.fragment.ChapterReadFragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -33,6 +35,7 @@ public class ChapterActivity extends FragmentActivity implements View.OnClickLis
     private FragmentManager manager;
     private FragmentTransaction transaction;
     private ChapterReadFragment chapterReadFragment;
+    private ChapterDownloadFragment cdFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -48,6 +51,7 @@ public class ChapterActivity extends FragmentActivity implements View.OnClickLis
 
         btnBrank.setOnClickListener(this);
         rbRead.setOnClickListener(this);
+        rbDownload.setOnClickListener(this);
 
         manager = getSupportFragmentManager();
         transaction = manager.beginTransaction();
@@ -102,6 +106,14 @@ public class ChapterActivity extends FragmentActivity implements View.OnClickLis
                     chapterReadFragment = new ChapterReadFragment();
                 }
                 transaction.replace(R.id.chapter_fragment,chapterReadFragment);
+                transaction.commit();
+                break;
+
+            case R.id.chapter_index_download:
+                if (cdFragment == null){
+                    cdFragment = new ChapterDownloadFragment();
+                }
+                transaction.replace(R.id.chapter_fragment, cdFragment);
                 transaction.commit();
                 break;
         }

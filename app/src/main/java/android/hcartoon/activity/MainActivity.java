@@ -13,6 +13,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -28,6 +29,9 @@ import com.nineoldandroids.view.ViewHelper;
 
 public class MainActivity extends FragmentActivity implements OnCheckedChangeListener,
         View.OnClickListener, OnPageChangeListener {
+
+
+    private long mExitTime;
 
     private ViewPager boby;
     private RadioGroup radioGroup;
@@ -55,6 +59,30 @@ public class MainActivity extends FragmentActivity implements OnCheckedChangeLis
 
 
     }
+
+
+    /**
+     * 按两次back健退出程序
+     * @param keyCode
+     * @param event
+     * @return
+     */
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            if ((System.currentTimeMillis() - mExitTime) > 2000) {
+                Object mHelperUtils;
+                Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+                mExitTime = System.currentTimeMillis();
+
+            } else {
+                finish();
+            }
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+
 
     private void initEvents() {
 

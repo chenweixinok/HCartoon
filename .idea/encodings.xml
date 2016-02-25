@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app/src/main/java/android/hcartoon/activity/ChapterActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/android/hcartoon/activity/DownloadActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/android/hcartoon/activity/SettingActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/android/hcartoon/activity/SettingCopyActivity.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/android/hcartoon/adapter/RankingWeekAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/android/hcartoon/adapter/RecentAdapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/android/hcartoon/adapter/ShelfAdapter.java" charset="UTF-8" />

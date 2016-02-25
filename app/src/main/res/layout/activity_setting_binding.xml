@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeeeee"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#48b775">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="个人中心"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/settingbind_brank_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/umeng_socialize_title_back_bt_normal" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddddd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="分享设置" />
+
+            <RelativeLayout
+                android:id="@+id/setting_banduser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/account_sim_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/sina"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/umeng_socialize_sina_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/sina"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="已授权" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/umeng_socialize_checked" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_clear_read"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/account_sim_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/qzone"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/umeng_socialize_qzone_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/qzone"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="未授权" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/umeng_socialize_switchimage_unchoose" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/account_sim_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/qq"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/umeng_socialize_qq_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/qq"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="未授权" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/umeng_socialize_switchimage_unchoose" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_copyright"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/account_sim_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/douban"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/umeng_socialize_douban_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/douban"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="未授权" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/umeng_socialize_switchimage_unchoose" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_newuser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/account_sim_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/renren"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/umeng_socialize_renren_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/renren"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="未授权" />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/umeng_socialize_switchimage_unchoose" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_about"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/account_sim_bg"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/tx"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:background="@drawable/umeng_socialize_tx_off" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tx"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="未授权 " />
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/umeng_socialize_switchimage_unchoose" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/account_shadow_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
